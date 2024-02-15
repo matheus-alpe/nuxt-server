@@ -7,5 +7,5 @@ export default defineEventHandler((event) => {
     }
 
     setCookie(event, 'name', 'Matt', { httpOnly: true })
-    return { message: 'Hello world' }
+    return { message: myFunction() }
 })
