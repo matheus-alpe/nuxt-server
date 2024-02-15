@@ -5,5 +5,7 @@ export default defineEventHandler((event) => {
             statusMessage: 'Unauthorized',
         })
     }
+
+    setCookie(event, 'name', 'Matt', { httpOnly: true })
     return { message: 'Hello world' }
 })
